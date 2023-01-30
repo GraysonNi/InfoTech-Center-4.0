@@ -17,9 +17,9 @@ a = 0
 
 
 
-print("\n\nWelcome - InfotechCenter 4.0")
+print("\n\nWelcome - InfotechCenter 4.0\n")
 time.sleep(timeToSleep)
-#rint("\nInfotech Center 4.0 OS is now loading")
+#print("\nInfotech Center 4.0 OS is now loading")
 
 while x != 20:
     x += 1
@@ -30,4 +30,4 @@ while x != 20:
     if a == 4:
         a = 0
     if x ==20:
-        print('\033[1;32;40;40m Done!')
+        print('\033[1;32;40;40m Retina Scan Complete - Access Granted!')
