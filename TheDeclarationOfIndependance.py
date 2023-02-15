@@ -144,9 +144,14 @@ def vehicleResponceSystem():
 
 
 #Call Function Here
-print("Nation Weather Service is checking conditions...\n")
-sleep(2)
-vehicleResponceSystem()
-print("\nChecking your vehicle's current gas levels...")
-sleep(2)
-gasLevelAlert()
+if gasLevelIndicator == "Empty":
+    print("\n***WARNING YOU ARE ON EMPTY***")
+    sleep(1)
+    print("Calling Emergency Contact")
+else:
+    print("Nation Weather Service is checking conditions...\n")
+    sleep(2)
+    vehicleResponceSystem()
+    print("\nChecking your vehicle's current gas levels...")
+    sleep(2)
+    gasLevelAlert()
