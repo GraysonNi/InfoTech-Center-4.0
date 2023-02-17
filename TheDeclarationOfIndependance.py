@@ -13,16 +13,17 @@ currentStation = station()
 
 def radio():
     if currentStation == "Hip-Hop":
-        print("\n You are now listening to", currentStation, "Radio."
-    elif currntStation == "Pop":
-        print("\n You are now listening to", currentStation, "Radio."
-    elif currntStation == "Country":
-        print("\n You are now listening to", currentStation, "Radio."
-    elif currntStation == "Latin":
-        print("\n You are now listening to", currentStation, "Radio."
-    elif currntStation == "Rock":
-        print("\n You are now listening to", currentStation, "Radio."
-    elif currntStation == "Electronic":
-        print("\n You are now listening to", currentStation, "Radio."
+        print("\n You are now listening to", currentStation, "Radio.")
+    elif currentStation == "Pop":
+        print("\n You are now listening to", currentStation, "Radio.")
+    elif currentStation == "Country":
+        print("\n You are now listening to", currentStation, "Radio.")
+    elif currentStation == "Latin":
+        print("\n You are now listening to", currentStation, "Radio.")
+    elif currentStation == "Rock":
+        print("\n You are now listening to", currentStation, "Radio.")
+    elif currentStation == "Electronic":
+        print("\n You are now listening to", currentStation, "Radio.")
     else:
-        print("\n You are now listening to", currentStation, "Radio."
+        print("\n You are now listening to", currentStation, "Radio.")
+radio()
