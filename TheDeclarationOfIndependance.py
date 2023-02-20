@@ -8,7 +8,8 @@ import random
 
 def station():
     stationGenre = ["Hip-Hop", "Pop", "Country", "Latin", "Rock", "Electronic", "Heavy Metal"]
-    return stationGenre
+    newStation = random.choice(stationGenre)
+    return newStation
 currentStation = station()
 
 def radio():
