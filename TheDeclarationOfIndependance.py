@@ -1,11 +1,6 @@
 # Programer: Grayson Nichols
-# Date: 1.20.2023
+# Date: 2.17.2023
 # Program: Infotech Center Upgrades
-
-"""
-Our Welcome Screen will start our program letting
-drivers know that the Infotech Center 4.0 OS is loading
-"""
 
 # Import Libraries Here
 import time
@@ -20,10 +15,6 @@ x = 0
 a = 0
 
 
-
-print("\n\nWelcome - InfotechCenter 4.0\n")
-time.sleep(timeToSleep)
-#print("\nInfotech Center 4.0 OS is now loading")
 
 while x != 20:
     x += 1
@@ -163,6 +154,29 @@ def pressureSensor():
     else:
         print("\nAll of your tires are at safe pressures.")
 
+
+def station():
+    stationGenre = ["Hip-Hop", "Pop", "Country", "Latin", "Rock", "Electronic", "Heavy Metal"]
+    newStation = random.choice(stationGenre)
+    return newStation
+currentStation = station()
+
+def radio():
+    if currentStation == "Hip-Hop":
+        print("\nYou are now listening to", currentStation, "Radio.")
+    elif currentStation == "Pop":
+        print("\nYou are now listening to", currentStation, "Radio.")
+    elif currentStation == "Country":
+        print("\nYou are now listening to", currentStation, "Radio.")
+    elif currentStation == "Latin":
+        print("\nYou are now listening to", currentStation, "Radio.")
+    elif currentStation == "Rock":
+        print("\nYou are now listening to", currentStation, "Radio.")
+    elif currentStation == "Electronic":
+        print("\nYou are now listening to", currentStation, "Radio.")
+    else:
+        print("\nYou are now listening to", currentStation, "Radio.")
+
 #Call Function Here
 if gasLevelIndicator == "Empty":
     print("\n***WARNING YOU ARE ON EMPTY***")
@@ -178,5 +192,8 @@ else:
     print("\nChecking Your vehicle's tires' pressure")
     sleep(2)
     pressureSensor()
+    print("\nActivating your radio")
+    sleep(1)
+    radio()
 
 
